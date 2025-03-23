@@ -1,7 +1,0 @@
-FROM python:3.9
-WORKDIR /app
-COPY requirements.txt requirements.txt
-RUN pip install -r requirements.txt
-COPY . .
-ENV MONGO_URI="mongodb+srv://rhett6butler:p123456p@rdd.fgx0a.mongodb.net/?retryWrites=true&w=majority&appName=rdd"
-CMD ["python", "server.py"]
